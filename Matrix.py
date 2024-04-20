@@ -119,10 +119,10 @@ if __name__ == '__main__':
                                                   batch_size=batch_size, shuffle=False,
                                                   num_workers=8)
 
-    model_weight_paths = ["/test/TobaccoStage/Network/EfficientNetV2/New_weights/M/TMB/checkpoint_TMB_200.pth",
-                          "/test/TobaccoStage/Network/EfficientNetV2/New_weights/M/TMB/checkpoint_TMB_199.pth",
-                          "/test/TobaccoStage/Network/EfficientNetV2/New_weights/M/TMB/checkpoint_TMB_198.pth",
-                         "/test/TobaccoStage/Network/EfficientNetV2/New_weights/M/TMB/checkpoint_TMB_197.pth",
-                         "/test/TobaccoStage/Network/EfficientNetV2/New_weights/M/TMB/checkpoint_TMB_196.pth"]
+    model_weight_paths = ["/test/TobaccoStage/Network/EfficientNetV2/New_weights/M/TMB/checkpoint_TMB_1.pth",
+                          "/test/TobaccoStage/Network/EfficientNetV2/New_weights/M/TMB/checkpoint_TMB_2.pth",
+                          "/test/TobaccoStage/Network/EfficientNetV2/New_weights/M/TMB/checkpoint_TMB_3.pth",
+                         "/test/TobaccoStage/Network/EfficientNetV2/New_weights/M/TMB/checkpoint_TMB_4.pth",
+                         "/test/TobaccoStage/Network/EfficientNetV2/New_weights/M/TMB/checkpoint_TMB_5.pth"]
 
     weighted_average(model_weight_paths, device, validate_loader)
